@@ -18,7 +18,7 @@ do
       if [ 1<3 ]
       #if [ $(($RANDOM/1000)) -lt 1000 ]
        then
-         S=$(jot -r 1 0 24)
+         S=$(jot -r 1 1 24)
          echo "$S^^^^^^^^^^^^"
          for i in {01..$S}
          do
