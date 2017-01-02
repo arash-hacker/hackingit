@@ -7,7 +7,7 @@ for jhgdfshdj in {2017}
 do
   mkdir $Y
   cd $Y
-  for M in {01,02,03,05,06,07,09,10}
+  for M in {01,02,03,05,06,07,09,10,11}
   do
     mkdir $M
     cd $M
