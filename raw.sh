@@ -15,12 +15,12 @@ do
     do
       mkdir $D
       cd $D
-      if [ true ]
-      #if [ $(($RANDOM/1000)) -lt 1000 ]
+      if [ $(($RANDOM/1000)) -lt 1000 ]
+      #if
        then
-         #S=$(jot -r 1 1 24)
+         S=$(jot -r 1 1 24)
          #echo "$S^^^^^^^^^^^^"
-         for i in {01..05}
+         for i in {01..$S}
          do
            echo "fine with me" > commit.md
            export GIT_COMMITTER_DATE="$Y-$M-$D 12:00:00"
