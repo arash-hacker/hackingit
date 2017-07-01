@@ -20,7 +20,7 @@ do
        then
          #S=$(jot -r 1 1 24)
          #echo "$S^^^^^^^^^^^^"
-         for i in {01..02}
+         for i in {01..05}
          do
            #echo "$i on $M/$D/$Y" > commit.md
            export GIT_COMMITTER_DATE="$Y-$M-$D 12:00:00"
