@@ -15,7 +15,9 @@ do
     do
       mkdir $D
       cd $D
-      if [ $(($RANDOM/1000)) -lt 4 ]
+      DD=$(($RANDOM/1000))
+      echo "$DD ********************************"
+      if [ $DD -lt 4 ]
       #if
        then
          S=$(jot -r 1 1 24)
@@ -29,7 +31,7 @@ do
            git commit --date="$Y-$M-$D 12:00:00" -m "$i on $M $D $Y"
          done
        else
-           echo "-------------------------------------"
+           echo ""
       fi
       #echo $(($RANDOM/1000))
       # jot -r 1 0 10
