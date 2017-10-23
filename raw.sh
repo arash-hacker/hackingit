@@ -15,7 +15,7 @@ do
     do
       mkdir $D
       cd $D
-      if [ $(($RANDOM/1000)) -lt 8 ]
+      if [ $(($RANDOM/1000)) -lt 4 ]
       #if
        then
          S=$(jot -r 1 1 24)
