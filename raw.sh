@@ -17,7 +17,7 @@ do
       cd $D
       DD=$(($RANDOM/1000))
       echo "$DD ********************************"
-      if [ $DD -lt 20 ]
+      if [ $DD > 20 ]
       #if
        then
          S=$(jot -r 1 1 24)
