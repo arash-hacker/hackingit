@@ -7,7 +7,7 @@ for jhgdfshdj in {2017}
 do
   mkdir $Y
   cd $Y
-  for M in {01,02,03,04,05,06,07,08,09,10}
+  for M in {01,02,03,05,06,07,09,10}
   do
     mkdir $M
     cd $M
@@ -17,7 +17,7 @@ do
       cd $D
       DD=$(($RANDOM/1000))
       echo "$DD ********************************"
-      if [ $DD > 20 ]
+      if [ $DD > "20" ]
       #if
        then
          S=$(jot -r 1 1 24)
