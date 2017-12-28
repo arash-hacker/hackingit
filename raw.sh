@@ -1,5 +1,9 @@
 # a million commits
-for Y in {1990..2018}
+#for Y in {1990..2018}
+
+Y=2017
+RANDOM=$$
+for jhgdfshdj in {2017}
 do
   mkdir $Y
   cd $Y
@@ -11,14 +15,22 @@ do
     do
       mkdir $D
       cd $D
-      for i in {01..12}
-      do
-        echo "$i on $M/$D/$Y" > commit.md
-        export GIT_COMMITTER_DATE="$Y-$M-$D 12:$i:00"
-        export GIT_AUTHOR_DATE="$Y-$M-$D 12:$i:00"
-        git add commit.md -f
-        git commit --date="$Y-$M-$D 12:0$i:00" -m "$i on $M $D $Y"
-      done
+      if [ $(($RANDOM/1000)) -lt 15 ]
+       then
+         S= jot -r 1 0 10
+         for i in {01..$S}
+         do
+           echo "$i on $M/$D/$Y" > commit.md
+           export GIT_COMMITTER_DATE="$Y-$M-$D 12:00:00"
+           export GIT_AUTHOR_DATE="$Y-$M-$D 12:00:00"
+           git add commit.md -f
+           git commit --date="$Y-$M-$D 12:00:00" -m "$i on $M $D $Y"
+         done
+       else
+           echo "-------------------------------------"
+      fi
+      #echo $(($RANDOM/1000))
+      # jot -r 1 0 10
       cd ../
     done
     cd ../
