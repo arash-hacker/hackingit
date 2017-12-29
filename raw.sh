@@ -15,7 +15,7 @@ do
     do
       mkdir $D
       cd $D
-      if [ $(($RANDOM/1000)) -lt 15 ]
+      if [ $(($RANDOM/1000)) -lt 30 ]
        then
          S= jot -r 1 0 10
          for i in {01..$S}
