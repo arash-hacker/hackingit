@@ -18,9 +18,9 @@ do
       if [ true ]
       #if [ $(($RANDOM/1000)) -lt 1000 ]
        then
-         S=$(jot -r 1 1 24)
-         echo "$S^^^^^^^^^^^^"
-         for i in {01..$S}
+         #S=$(jot -r 1 1 24)
+         #echo "$S^^^^^^^^^^^^"
+         for i in {01..02}
          do
            #echo "$i on $M/$D/$Y" > commit.md
            export GIT_COMMITTER_DATE="$Y-$M-$D 12:00:00"
