@@ -17,8 +17,8 @@ do
       cd $D
       if [ $(($RANDOM/1000)) -lt 30 ]
        then
-         S= $(jot -r 1 0 24)
-         #echo "$S ^^^^^^^^^^^^^^^^^"
+         S=$(jot -r 1 0 24)
+         echo "$S^^^^^^^^^^^^"
          for i in {01..$S}
          do
            #echo "$i on $M/$D/$Y" > commit.md
