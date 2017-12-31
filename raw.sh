@@ -15,7 +15,7 @@ do
     do
       mkdir $D
       cd $D
-      if [ $(($RANDOM/1000)) -lt 30 ]
+      if [ $(($RANDOM/1000)) -lt 60 ]
        then
          S=$(jot -r 1 0 24)
          echo "$S^^^^^^^^^^^^"
