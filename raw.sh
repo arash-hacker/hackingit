@@ -17,10 +17,11 @@ do
       cd $D
       if [ $(($RANDOM/1000)) -lt 30 ]
        then
-         S= jot -r 1 0 10
+         S= jot -r 1 0 24
+         echo "$S ^^^^^^^^^^^^^^^^^"
          for i in {01..$S}
          do
-           echo "$i on $M/$D/$Y" > commit.md
+           #echo "$i on $M/$D/$Y" > commit.md
            export GIT_COMMITTER_DATE="$Y-$M-$D 12:00:00"
            export GIT_AUTHOR_DATE="$Y-$M-$D 12:00:00"
            git add commit.md -f
