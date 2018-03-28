@@ -1,1 +1,0 @@
-I was Bord Today 😇
