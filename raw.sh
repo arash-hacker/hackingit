@@ -1,7 +1,7 @@
 # a million commits
 #for Y in {1990..2018}
 
-Y=2017
+Y=2018
 RANDOM=$$
 for jhgdfshdj in {2018}
 do
