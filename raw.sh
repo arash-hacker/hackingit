@@ -17,6 +17,7 @@ do
       cd $D
       DD=$(($RANDOM/1000))
       echo "$DD ********************************"
+      echo "???" > commit.md
       if [ $DD < 24 ]
       #if
        then
