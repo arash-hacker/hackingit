@@ -7,7 +7,7 @@ for jhgdfshdj in {2017}
 do
   mkdir $Y
   cd $Y
-  for M in {01,02,03,05,06,07,09,10,11}
+  for M in {01,02,03,04,05,06,07,08,09,10,11,12}
   do
     mkdir $M
     cd $M
@@ -20,7 +20,7 @@ do
       if [ $DD < 15 ]
       #if
        then
-         S=$(jot -r 1 1 24)
+         S=$(jot -r 1 1 3)
          #echo "$S^^^^^^^^^^^^"
          for i in {01..$S}
          do
