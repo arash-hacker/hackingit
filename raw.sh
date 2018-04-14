@@ -3,11 +3,11 @@
 
 Y=2017
 RANDOM=$$
-for jhgdfshdj in {2017}
+for jhgdfshdj in {2018}
 do
   mkdir $Y
   cd $Y
-  for M in {01,02,03,04,05,06,07,08,09,10,11,12}
+  for M in {01,02,03,04,05}
   do
     mkdir $M
     cd $M
@@ -17,10 +17,10 @@ do
       cd $D
       DD=$(($RANDOM/1000))
       echo "$DD ********************************"
-      if [ $DD < 15 ]
+      if [ $DD < 24 ]
       #if
        then
-         S=$(jot -r 1 1 3)
+         S=$(jot -r 1 1 5)
          #echo "$S^^^^^^^^^^^^"
          for i in {01..$S}
          do
