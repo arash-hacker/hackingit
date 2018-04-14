@@ -21,7 +21,6 @@ do
       #if
        then
          S=$(jot -r 1 1 5)
-         #echo "$S^^^^^^^^^^^^"
          for i in {01..$S}
          do
            echo "fine with me" > commit.md
