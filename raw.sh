@@ -13,11 +13,11 @@ do
       mkdir $D
       cd $D
       DD=$(($RANDOM/1000))
-      echo "$DD ********************************"
       echo "???" > commit.md
-      if [ true ]
+      if [ $DD < "24" ]
       #if
        then
+        echo "$DD ********************************"
          S=$(jot -r 1 1 5)
          for i in {01..$S}
          do
