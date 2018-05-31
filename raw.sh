@@ -14,11 +14,11 @@ do
       cd $D
       DD=$(($RANDOM/1000))
       echo "???" > commit.md
-      if [ $DD < "24" ]
+      if [ true ]
       #if
        then
-        echo "$DD ********************************"
-         S=$(jot -r 1 1 5)
+         echo "$DD ********************************"
+         S=$(jot -r 1 1 17)
          for i in {01..$S}
          do
            echo "fine with me" > commit.md
