@@ -1,6 +1,3 @@
-# a million commits
-#for Y in {1990..2018}
-
 Y=2018
 RANDOM=$$
 for jhgdfshdj in {2018}
@@ -18,7 +15,7 @@ do
       DD=$(($RANDOM/1000))
       echo "$DD ********************************"
       echo "???" > commit.md
-      if [ $DD < 24 ]
+      if [ true ]
       #if
        then
          S=$(jot -r 1 1 5)
