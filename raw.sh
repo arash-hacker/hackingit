@@ -18,8 +18,8 @@ do
       #if
        then
          echo "$DD ********************************"
-         S=$(jot -r 100 60 100)
-         for i in {1..$S}
+         S=$(jot -r 20 60 100)
+         for i in {60..$S}
          do
            echo "fine with me" > commit.md
            export GIT_COMMITTER_DATE="$Y-$M-$D 12:00:00"
