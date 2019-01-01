@@ -25,7 +25,7 @@ do
            #echo $S
            export GIT_COMMITTER_DATE="$Y-$M-$D 12:00:00"
            export GIT_AUTHOR_DATE="$Y-$M-$D 12:00:00"
-           git add . -f 
+           git add commit.md -f 
            git commit --date="$Y-$M-$D 12:00:00" -m "$i on $M $D $Y" 
          done
        else
