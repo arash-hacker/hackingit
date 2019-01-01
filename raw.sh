@@ -18,7 +18,7 @@ do
       #if
        then
          echo "$DD ********************************"
-         S=$(jot -r 1 6 100)
+         S=$(jot -r 1 60 100)
          for i in {7..$S}
          do
            echo "fine with me" > commit.md
