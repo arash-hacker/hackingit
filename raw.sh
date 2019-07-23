@@ -21,7 +21,7 @@ do
          for i in {1..100}
          do
            #echo "$S ********************************"
-           echo "fine with me" > commit.md
+           echo "fine with me" >> commit.md
            #echo $S
            export GIT_COMMITTER_DATE="$Y-$M-$D 12:00:00"
            export GIT_AUTHOR_DATE="$Y-$M-$D 12:00:00"
