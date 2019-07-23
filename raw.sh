@@ -22,9 +22,10 @@ do
          for i in {20..$S}
          do
            echo "fine with me" > commit.md
+           echo $S
            export GIT_COMMITTER_DATE="$Y-$M-$D 12:00:00"
            export GIT_AUTHOR_DATE="$Y-$M-$D 12:00:00"
-           git add commit.md -f && git commit --date="$Y-$M-$D 12:00:00" -m "$i on $M $D $Y"
+           git add . -f && git commit --date="$Y-$M-$D 12:00:00" -m "$i on $M $D $Y"
          done
        else
            echo "-----------------------------"
