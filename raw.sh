@@ -4,7 +4,7 @@ for jhgdfshdj in {2019}
 do
   mkdir $Y
   cd $Y
-  for M in {01,02,03,04,05,06,07}
+  for M in {01}
   do
     mkdir $M
     cd $M
@@ -18,14 +18,15 @@ do
       #if
        then
          echo "$DD ********************************"
-         S=$(jot -r 20 60 100)
-         for i in {20..$S}
+         S=$(jot -r 30 60 100)
+         for i in {1..$S}
          do
            echo "fine with me" > commit.md
            echo $S
            export GIT_COMMITTER_DATE="$Y-$M-$D 12:00:00"
            export GIT_AUTHOR_DATE="$Y-$M-$D 12:00:00"
-           git add . -f && git commit --date="$Y-$M-$D 12:00:00" -m "$i on $M $D $Y" && git push 
+           git add . -f 
+           git commit --date="$Y-$M-$D 12:00:00" -m "$i on $M $D $Y" 
          done
        else
            echo "-----------------------------"
