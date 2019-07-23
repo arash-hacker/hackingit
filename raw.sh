@@ -1,10 +1,10 @@
-Y=2018
+Y=2019
 RANDOM=$$
-for jhgdfshdj in {2018}
+for jhgdfshdj in {2019}
 do
   mkdir $Y
   cd $Y
-  for M in {01,02,03,04,05}
+  for M in {01,02,03,04,05,06,07}
   do
     mkdir $M
     cd $M
@@ -18,7 +18,7 @@ do
       #if
        then
          echo "$DD ********************************"
-         S=$(jot -r 1 6 17)
+         S=$(jot -r 1 6 100)
          for i in {7..$S}
          do
            echo "fine with me" > commit.md
