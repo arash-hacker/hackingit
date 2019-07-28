@@ -8,7 +8,7 @@ do
   do
     mkdir $M
     cd $M
-    for D in {01..30}
+    for D in {01..28}
     do
       mkdir $D
       cd $D
